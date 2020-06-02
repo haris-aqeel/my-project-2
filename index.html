@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My web project</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  	<script src="https://kit.fontawesome.com/bfba74963a.js" crossorigin="anonymous"></script>
+  	<style type="text/css">
+  		*{
+		margin:0px;
+		padding:0px;
+		box-sizing: border-box;
+		font-family: 'Poppins', sans-serif;
+			}
+
+		a{	text-decoration: none;}
+
+		a:hover{  text-decoration: none; color:white;}
+
+		li{	list-style: none;}
+
+		p{ font-size: 0.9rem; line-height: 1.5; font-weight: 400; color:#606060; }
+
+
+
+		.header{
+
+			width:100%;
+			height:100vh;
+			background-image:linear-gradient(rgba(0,168,255,0.3),rgba(0,168,255,0.3)),url("images/computer.jpg");
+			background-size:100% 100%;
+			background-repeat: no-repeat;
+			clip-path: polygon(100% 0%, 100% 80%, 50% 100%,0% 80% , 0% 0%);
+			
+		}
+
+		.nav-item a{
+
+			color:#fff!important;
+			font-weight: bold;
+		}
+
+		.header-section{
+			width:100%;
+			height:inherit;
+			text-align: center;
+			position:relative;
+		}
+		.center-div{
+			width:100%;
+			height: 40%;
+			position:absolute;
+			top:50%;
+			left:50%;
+			transform:translate(-50%,-50%);
+			-ms-transform:translate(-50%,-50%);
+			-webkit-transform:translate(-50%,-50%);
+			color:#fff;
+
+		}
+
+		.header-buttons a{
+			border:1px solid #fff;
+			outline:none;
+			border-radius:100px;
+			margin:0px 5px;
+			padding:12px 35px;
+			color:#fff;
+			text-align: center;}
+
+			.header-buttons a:hover{
+
+				text-decoration: none;
+				background-color: #fff;
+				color:lightblue;
+			}
+
+		.center-div p{
+
+			padding: 10px 0px 20px 0px;
+			color:white;
+		}
+		.intermediate{
+			width: 100%;
+			background-color: #fff;
+
+		}
+
+		.intermediate .row{
+			margin:100px 0px 200px 0px;
+		}
+
+		.intermediate .col{
+			
+			text-align:center;
+			padding: 50px 30px 60px 30px;
+			background-color: #fff;}
+
+
+		.intermediate .col:hover{
+				box-shadow: 0 0 20px  0 rgba(0,0,0,0.3); 
+				transform: translateY(-20px);
+		}
+		.intermediate .col h2{
+
+			font-size:0.8rem;
+			font-weight: bold;
+			margin:15px;
+		}
+		.offer{
+
+			background-color: #f7f7f9;
+			text-align: left;
+			padding:50px 0px;
+
+			
+		}
+
+		.my_para{
+			margin-bottom: 50px;
+		}
+
+		.my_para  h2{
+
+			font-size:1.5rem;
+			font-weight: 600;
+
+		}
+		.first{
+
+			padding-right: 100px;
+		}
+
+		.second{
+			margin-top:20px;
+		}
+
+		.ka{
+
+			margin-bottom:35px;
+		}
+		.offer .col h2{
+
+			font-size:0.8rem;
+			font-weight: bold;
+		}
+
+		.mynames{
+			color:#2e2e2e;
+			font-size: 0.9rem;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+
+		.head{
+			font-size: 2rem;
+			text-align: center;
+
+			margin-bottom:60px;
+		}
+
+		.money{
+			width:100%;
+			height:100vh;
+			background-image: url("https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+			background-size: cover;
+			background-repeat: no-repeat;
+			padding-top:50px;
+		}
+
+		.money .head{
+			color:#fff;
+		}
+
+		.money-heading{
+			text-align: center;
+			font-size:2rem;
+			font-weight: 800;
+
+		}
+		.money-body{
+
+			text-align: center;
+
+		}
+		.money-body h3{
+			padding-top:25px;
+			padding-bottom:25px;
+		}
+
+		.money-btn{
+			margin-top:40px;
+			text-align: center;
+			border-radius: 100px;
+
+		}
+
+		.money .col{
+			text-align:center;
+			padding: 50px 30px 60px 30px;
+			background-color: #fff;
+			box-shadow: 0 0 20px  0 rgba(0,0,0,0.3);
+		}
+
+		.money .col:hover{
+				box-shadow: 0 0 20px  0 rgba(0,0,0,0.3); 
+				transform: translateY(-20px);
+		}
+		footer{
+
+			width:100%;
+			height:50%;
+			background-color:skyblue;
+			color:#fff;
+		}
+
+
+		.sub{
+
+			text-align:center;
+			align-items: center;
+			margin:0px 30px 30px 30px;
+		}
+
+		.sub-head{
+			padding-top: 35px;
+			margin-bottom: 20px;
+		}
+		.sub .sub-text{
+			width:500px;
+			height:40px;
+			border-radius:100px;
+			padding-left: 25px;
+			outline: none;
+
+		}
+		.sub img{
+			position:relative;
+			right:30px;
+		}
+
+		.end{
+			background-color:skyblue;
+			color:#fff;
+			width:100%;
+			height:28vh;
+		}
+
+		.end p{
+			padding-top:50px;
+		}
+  	</style>
+</head>
+<body>
+	<div class="header " id="topheader">
+		<nav class="navbar navbar-expand-lg">
+			<div class="container text-uppercase p-2">
+				  <a class="navbar-brand font-weight-bold text-uppercase text-white" href="#">WebHaris</a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+  			
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Service</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Price</a>
+      </li>     
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>     
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>           
+    </ul>
+  </div>
+</div>
+</nav>
+
+<section class="header-section fixed-top">
+	<div class="center-div">
+		<h1 class="font-weight-bold">We are the Web Developers</h1>
+		<p>We create the world best Websites</p>
+		<div class="header-buttons">
+			<a href="#">About us</a>
+			<a href="#">Contact</a>
+		</div>
+	</div>
+</section>
+
+	</div>
+
+	<!--=================================header part ends========================================-->
+
+	<!--===============================three extra parts=======================================-->
+
+	<section class="intermediate">
+		<div class="container">
+		<div class="row">
+
+			<div class="col col-lg-4 col-md-4 col-sm-12">
+			
+					<a><i class="fas fa-desktop fa-2x"></i></a>
+					<h2 class="inter-head">EASY TO USE</h2>
+					<p> enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+
+			</div>
+			<div class="col col-lg-4 col-md-4 col-sm-12">
+			
+					<a><i class="fas fa-trophy fa-2x"></i></a>
+					<h2 class="inter-head">AWESOME DESIGN</h2>
+					<p>Ut enim ad minim veniam,is nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+			
+			</div>
+			<div class="col col-lg-4 col-md-4 col-sm-12">
+				
+					<a href=""><i class="fas fa-pen-fancy fa-2x"></i></a>
+					<h2 class="inter-head">EASY TO CUSTOMIZE</h2>
+					<p> Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+		
+			</div>
+		</div>
+	</div>
+	</section>
+
+	<section class="offer">
+		
+		<div class="my_para text-center">
+			<h2 class="my_head font-weight-bold">WHAT DO WE OFFER</h2>
+			<p>We offer all types of Web-designing courses. Come and avail oppurtinity</p>
+		</div>
+		<div class="container">
+			<div class="row">
+			
+				<div class="col col-lg-6 col-md-12 col-10 col-offset-1 col-lg-offset-0 first">
+				
+						<div class="mynames">
+							<h2>Html</h2>
+							<div class="progress">
+						    <div class="progress-bar progress-bar-striped"  style="width: 100%"> </div>
+							</div>
+							<br>
+						</div>
+						<div class="mynames">
+							<h2>CSS</h2>
+							<div class="progress ">
+						    <div class="progress-bar progress-bar-striped bg-success"  style="width: 90%" ></div>
+							</div>
+							<br>
+						</div>
+						<div class="mynames">
+							<h2>Bootstrap</h2>
+							<div class="progress">
+						  	<div class="progress-bar progress-bar-striped bg-info"  style="width: 80%"> </div>
+						  	</div>
+						  	<br>
+						</div>
+						<div class="mynames">
+							<h2>Javascript</h2>
+							<div class="progress">
+						    <div class="progress-bar progress-bar-striped bg-warning"  style="width: 70%"> </div>
+							</div>
+							<br>
+						</div>
+						<div class="mynames">
+							<h2>Jquery</h2>
+							<div class="progress">
+				     		<div class="progress-bar progress-bar-striped bg-danger"  style="width: 60%"></div>
+				     		</div>
+				     		<br>
+						</div>
+				</div>
+
+				<div class="col col-lg-6 col-md-12 col-10 col-offset-1 col-lg-offset-0 second">
+					
+					<div class="row ka">
+						
+						<div class="col col-lg-2 col-2 service-icons">
+							<i class="fas fa-desktop fa-2x"></i>
+						</div>
+						<div class="col col-lg-10 col-10">
+							<h2>Website development</h2>
+							<p class="shortp">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+						</div>
+					</div>
+
+					<div class="row ka">
+					
+						<div class="col col-lg-2 col-2 service-icons">
+							<i class="fas fa-wifi fa-2x"></i>
+						</div>
+						<div class="col col-lg-10 col-10">
+							<h2>Disital Marketing</h2>
+							<p class="shortp">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </p>
+						</div>
+					</div>
+					<div class="row ka">
+						<div class="col col-lg-2 col-2 service-icons">
+							<i class="fas fa-phone-square fa-2x"></i>
+						</div>
+						<div class="col col-lg-10 col-10">
+							<h2>Support 24/7</h2>
+							<p class="shortp">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+	</section>
+
+<section class="money">
+
+	<h1 class="head">
+		Our Best Pricing
+	</h1>
+
+	<div class="container">
+		<div class="row">
+		
+			<div class="col col-lg-4 col-md-12 col-offset-1 col-lg-offset-0">
+				<div class="money-heading">
+					<h2>BASIC</h2>
+				</div>
+				<hr>
+				<div class="money-body">
+					<h3 class="price-tag"><span class="amount">$20</span>/Website</h3>
+					<ul>
+						<li>Responsive Website</li>
+						<li>Good Design</li>
+						<li>Mobile Friendly</li>
+						<li>Webmail support</li>
+						<li>Customer support</li>
+					</ul>
+				</div>
+				<hr>
+				<div class="money-btn">
+					<button class="btn btn-outline-success">Purchase</button>
+				</div>
+			</div>
+			<div class="col col-lg-4 col-md-12 col-offset-1 col-lg-offset-0">
+				<div class="money-heading">
+					<h2>STANDARD</h2>
+				</div>
+				<hr>
+				<div class="money-body">
+					<h3 class="price-tag"><span class="amount">$40</span>/Website</h3>
+					<ul>
+						<li>Responsive Website</li>
+						<li>Good Design</li>
+						<li>Mobile Friendly</li>
+						<li>Webmail support</li>
+						<li>Customer support</li>
+					</ul>
+				</div>
+				<hr>
+				<div class="money-btn">
+					<button class="btn btn-outline-success">Purchase</button>
+				</div>
+			</div>
+			<div class="col col-lg-4 col-,md-12 col-offset-1 col-lg-offset-0">
+				<div class="money-heading">
+					<h2>UNLIMITED</h2>
+				</div>
+				<hr>
+				<div class="money-body">
+					<h3 class="price-tag"><span class="amount">$80</span>/Website</h3>
+					<ul>
+						<li>Responsive Website</li>
+						<li>Good Design</li>
+						<li>Mobile Friendly</li>
+						<li>Webmail support</li>
+						<li>Customer support</li>
+					</ul>
+				</div>
+				<hr>
+				<div class="money-btn">
+					<button class="btn btn-outline-success">Purchase</button>
+			
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</section>
+<footer class="end">
+	<div class="sub">
+	<h1 class="sub-head">Subscribe to our news Letter</h1>
+	<input type="text" class="sub-text" placeholder ="Subscribe to our news letter">
+	<img src="images/search.png">
+	</div>
+	<div class="end">
+		<p class="text-center">Copyrights @ 2019 All Rights reserved | This template in love by Haris Aqeel</p>
+	</div>
+	</footer>
+	
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="fourth.js" charset="utf-8">
+</body>
+</html>
